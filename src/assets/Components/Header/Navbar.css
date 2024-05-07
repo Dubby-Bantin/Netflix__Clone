@@ -1,0 +1,82 @@
+.nav__bar {
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    z-index: 10;
+}
+
+.logo img {
+    height: 25px;
+}
+
+.nav__list,
+.logoList {
+    gap: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.nav__black {
+    background-color: #000;
+    transition: all 1s;
+}
+
+.profile__region {
+    cursor: pointer;
+    gap: 20px;
+}
+
+.profile__region img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.profile__region img:nth-child(4) {
+    width: 35px;
+    border-radius: 4px;
+}
+
+.profile__region span img {
+    transition: all .3s;
+    /* rotate: 180deg; */
+    width: 10px;
+}
+
+.drop__down {
+    background: rgba(0, 0, 0, .9);
+    height: 3rem;
+    width: 12rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.drop__down:hover {
+    text-decoration: underline;
+}
+
+.profile__region span img:hover {
+    rotate: 180deg;
+}
+
+.profile__region:hover .drop__down {
+    display: flex;
+}
+
+
+@media (max-width: 600px) {
+
+    .nav__bar {
+        padding: 20px;
+    }
+
+
+    .nav__list small {
+        display: none;
+    }
+}

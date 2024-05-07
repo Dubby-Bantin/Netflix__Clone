@@ -1,0 +1,55 @@
+.row__parent {
+    padding: .5rem 2rem;
+    position: relative;
+    top: -10rem;
+    background-color: #111;
+}
+
+.movies__container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 30px;
+}
+
+h2 {
+    margin-left: 2rem;
+}
+
+.movies__container::-webkit-scrollbar {
+    display: none;
+}
+
+.movies {
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    max-height: 128px;
+    transition: all .4s;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.movies:hover {
+    transform: scale(1.4);
+    z-index: 100;
+    border-radius: 4px 4px 0 0;
+}
+
+@media (max-width: 767.98px) {
+    h2 {
+        margin-left: 0;
+    }
+
+    .movies__container {
+        padding: 1px;
+    }
+
+    .movies__container img {
+        max-height: 70px;
+    }
+
+
+    .movies:hover {
+        transform: none;
+    }
+}
