@@ -1,5 +1,4 @@
-const apiKey = "0bb7fdb4628a48713b9265f1b9c49e13";
-
+import { apiKey } from "./api_key";
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${apiKey}&language=en-US`,
     fetchNetflixOriginals: `/discover/tv?api_key=${apiKey}&with_networks=213`,

@@ -35,6 +35,8 @@ const signUp = async (name, email, password) => {
         name,
         authProvider: "local",
         email,
+
+        
         });
         toast.success("user successfully created");
     } catch (e) {
