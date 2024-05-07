@@ -1,4 +1,5 @@
 import { apiKey } from "./api_key";
+// u should provide ur unique api key here to access the api data
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${apiKey}&language=en-US`,
     fetchNetflixOriginals: `/discover/tv?api_key=${apiKey}&with_networks=213`,
